@@ -10,14 +10,15 @@
         "build-storybook": "storybook build",
         "dev": "next dev",
         "format": "prettier --write .",
+        "postinstall": "prisma generate",
         "lint": "next lint",
         "lint-staged": "lint-staged",
+        "migration-bdd": "prisma migrate dev --name init",
         "prepare": "husky install",
         "start": "next start",
         "storybook": "storybook dev -p 6006",
         "test": "vitest",
-        "update-schema": "prisma generate",
-        "migration-bdd": "prisma migrate dev --name init"
+        "update-schema": "prisma generate"
     },
     "lint-staged": {
         "*.tsx": "eslint",
