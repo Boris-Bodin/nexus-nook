@@ -19,6 +19,7 @@ This repository contains the source code for the Nexus Hook, a link-in-bio appli
 -   SASS
 -   Vitest
 -   React Query
+-   StoryBook
 
 ## Roadmap
 
@@ -28,7 +29,6 @@ This repository contains the source code for the Nexus Hook, a link-in-bio appli
 -   Find if needed and how to rename the `hooks` folder (best-pratice react +-)
 -   Find if needed and how to rename the `domain` folder (best-pratice react +-)
 -   Find if needed and how to rename the `query` files (best-pratice react +-)
--   Add storybook
 -   Add a database
 -   Add vercel deployment
 -   Code the app
