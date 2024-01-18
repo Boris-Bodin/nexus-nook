@@ -15,7 +15,9 @@
         "prepare": "husky install",
         "start": "next start",
         "storybook": "storybook dev -p 6006",
-        "test": "vitest"
+        "test": "vitest",
+        "update-schema": "prisma generate",
+        "migration-bdd": "prisma migrate dev --name init"
     },
     "lint-staged": {
         "*.tsx": "eslint",
@@ -28,8 +30,11 @@
         "@mui/icons-material": "^5.15.5",
         "@mui/material": "^5.15.5",
         "@mui/styled-engine-sc": "^6.0.0-alpha.12",
+        "@prisma/client": "^5.8.1",
         "@tanstack/react-query": "^5.17.15",
+        "@vercel/postgres": "^0.5.1",
         "next": "^14.0.4",
+        "prisma": "^5.8.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
         "styled-components": "^6.1.8"

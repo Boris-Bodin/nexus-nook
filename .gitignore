@@ -11,6 +11,7 @@
 
 # misc
 /yarn-error.log
+.env
 
 # System Files
 .DS_Store

@@ -1,8 +1,11 @@
-import {Product} from '@/features/products/domain/product';
+import {PrismaClient} from "@prisma/client";
 
-export const fetchProductById: (id: number) => Product = function (id: number) {
-    return {
-        id,
-        name: `Product ${id}`,
-    };
+const prisma = new PrismaClient();
+
+export default async function fetchProductById(id: number) {
+    return prisma.product.findUnique({
+        where: {
+            id: id,
+        },
+    });
 };
