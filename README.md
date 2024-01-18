@@ -22,7 +22,12 @@ This repository contains the source code for the Nexus Hook, a link-in-bio appli
 
 ## Roadmap
 
--   Add MIU
+-   Find if it's possible to add more separation between api, and front route
+-   Find if it's possible to rename the root layout
+-   Find if needed and how to rename the `use-cases` folder (best-pratice react +-)
+-   Find if needed and how to rename the `hooks` folder (best-pratice react +-)
+-   Find if needed and how to rename the `domain` folder (best-pratice react +-)
+-   Find if needed and how to rename the `query` files (best-pratice react +-)
 -   Add storybook
 -   Add a database
 -   Add vercel deployment
@@ -31,4 +36,5 @@ This repository contains the source code for the Nexus Hook, a link-in-bio appli
 
 ## Notes
 
--   add `"strip-ansi": "6.0.1",` to `package.json` for fix the following issue : https://github.com/eslint/eslint/discussions/17215
+-   add `"strip-ansi": "6.0.1",` to `package.json` for fix the following
+    issue : https://github.com/eslint/eslint/discussions/17215

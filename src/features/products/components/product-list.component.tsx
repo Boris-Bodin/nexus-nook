@@ -3,6 +3,9 @@
 import {useQuery} from '@tanstack/react-query';
 import {queryProducts} from '@/features/products/hooks/query-products';
 import Link from 'next/link';
+import {Button, List, ListItem, ListItemText} from '@mui/material';
+
+import {Star} from '@mui/icons-material';
 
 export default function ProductListComponent() {
     // Queries
@@ -14,15 +17,17 @@ export default function ProductListComponent() {
     return (
         <>
             <h2>Products list</h2>
-            {query.data?.map((p) => (
-                <p key={p.id}>
-                    {p.name}
-                    <Link className={'m-5'} href={'/products/' + p.id}>
-                        View
-                    </Link>
-                </p>
-            ))}
-            <Link href={'/'}>Back Home</Link>
+            <List>
+                {query.data?.map((p) => (
+                    <ListItem key={p.id}>
+                        <Star />
+                        <ListItemText>{p.name}</ListItemText>
+                        <Link href={'/products/' + p.id}>
+                            <Button>View</Button>
+                        </Link>
+                    </ListItem>
+                ))}
+            </List>
         </>
     );
 }

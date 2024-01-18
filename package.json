@@ -20,10 +20,17 @@
         "**/*": "prettier --write --ignore-unknown"
     },
     "dependencies": {
+        "@emotion/react": "^11.11.3",
+        "@emotion/styled": "^11.11.0",
+        "@fontsource/roboto": "^5.0.8",
+        "@mui/icons-material": "^5.15.5",
+        "@mui/material": "^5.15.5",
+        "@mui/styled-engine-sc": "^6.0.0-alpha.12",
         "@tanstack/react-query": "^5.17.15",
         "next": "^14.0.4",
         "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "react-dom": "^18.2.0",
+        "styled-components": "^6.1.8"
     },
     "devDependencies": {
         "@tanstack/eslint-plugin-query": "^5.17.7",

@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 export default function RootLayout({children}: {children: React.ReactNode}) {
     return (
         <>
-            <h1 className='text-3xl font-bold underline'>Hello, Next.js! {process.env['NEXT_PUBLIC_ENVIRONNEMENT']}</h1>
+            <h1 className='underline'>Hello! Env : {process.env['NEXT_PUBLIC_ENVIRONNEMENT']}</h1>
             {children}
         </>
     );

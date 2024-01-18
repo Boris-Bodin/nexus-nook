@@ -2,7 +2,6 @@
 
 import {useQuery} from '@tanstack/react-query';
 import {queryProductById} from '@/features/products/hooks/query-product-by-id';
-import Link from 'next/link';
 
 export default function DetailComponent({id}: {id: number}) {
     // Queries
@@ -16,7 +15,6 @@ export default function DetailComponent({id}: {id: number}) {
             <h2>Product view</h2>
             {query.data?.name}
             <br />
-            <Link href={'/products'}>Back Products</Link>
         </>
     );
 }
