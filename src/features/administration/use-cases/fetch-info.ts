@@ -1,3 +1,3 @@
-export const fetchInfo: () => {version: string} = function () {
+export default function fetchInfo() {
     return {version: process.env['NEXT_VERSION'] ?? ''};
 };

@@ -1,13 +1,13 @@
 'use client';
 
 import {useQuery} from '@tanstack/react-query';
-import {queryProductById} from '@/features/products/hooks/query-product-by-id';
+import findProductByIdQuery from "@/features/products/queries/find-product-by-id.query";
 
 export default function DetailComponent({id}: {id: number}) {
-    // Queries
+
     const query = useQuery({
         queryKey: ['products', id],
-        queryFn: queryProductById(id),
+        queryFn: findProductByIdQuery(id),
     });
 
     return (

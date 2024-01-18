@@ -1,17 +1,16 @@
 'use client';
 
 import {useQuery} from '@tanstack/react-query';
-import {queryProducts} from '@/features/products/hooks/query-products';
 import Link from 'next/link';
 import {Button, List, ListItem, ListItemText} from '@mui/material';
-
 import {Star} from '@mui/icons-material';
+import findProductsQuery from "@/features/products/queries/find-products.query";
 
 export default function ProductListComponent() {
-    // Queries
+
     const query = useQuery({
         queryKey: ['products'],
-        queryFn: queryProducts(),
+        queryFn: findProductsQuery(),
     });
 
     return (
@@ -20,7 +19,7 @@ export default function ProductListComponent() {
             <List>
                 {query.data?.map((p) => (
                     <ListItem key={p.id}>
-                        <Star />
+                        <Star/>
                         <ListItemText>{p.name}</ListItemText>
                         <Link href={'/products/' + p.id}>
                             <Button>View</Button>

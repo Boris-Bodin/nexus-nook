@@ -1,6 +1,6 @@
 import {NextResponse} from 'next/server';
-import fetchProducts from "@/features/products/use-cases/fetch-products";
+import findProducts from "@/features/products/resources/find-products";
 
 export async function GET(_request: Request) {
-    return NextResponse.json(await fetchProducts());
+    return NextResponse.json(await findProducts());
 }
