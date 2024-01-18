@@ -36,7 +36,8 @@
         ],
         "paths": {
             "@/styles/*": ["styles/*"],
-            "@/components/*": ["components/*"]
+            "@/components/*": ["components/*"],
+            "@/hooks/*": ["hooks/*"]
         }
     },
     "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx"],

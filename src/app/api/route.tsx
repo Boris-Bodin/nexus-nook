@@ -1,5 +1,6 @@
 import {NextResponse} from 'next/server';
+import {getInfo} from '@/hooks/info';
 
 export function GET() {
-    return NextResponse.json({version: process.env['VERSION']});
+    return NextResponse.json(getInfo());
 }

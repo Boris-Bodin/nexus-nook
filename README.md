@@ -22,6 +22,7 @@ This repository contains the source code for the Nexus Hook, a link-in-bio appli
 
 ## Roadmap
 
+-   Fix test using react-query
 -   Add MIU
 -   Add storybook
 -   Add a database

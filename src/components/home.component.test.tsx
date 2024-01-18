@@ -1,8 +1,8 @@
 import {expect, test} from 'vitest';
 import {render, screen} from '@testing-library/react';
-import Page from './page';
+import HomeComponent from './home.component';
 
-test('Page', () => {
-    render(<Page />);
+test('HomeComponent', () => {
+    render(<HomeComponent />);
     expect(screen.getByRole('heading', {level: 1, name: 'Hello, Next.js!'})).toBeDefined();
 });
