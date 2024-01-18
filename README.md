@@ -17,14 +17,16 @@ This repository contains the source code for the Nexus Hook, a link-in-bio appli
 -   Husky
 -   Tailwind CSS
 -   SASS
+-   Vitest
+-   React Query
 
 ## Roadmap
 
--   Add Jest
--   Add vercel deployment
+-   Add MIU
 -   Add storybook
--   Code the app
 -   Add a database
+-   Add vercel deployment
+-   Code the app
 -   And more ....
 
 ## Notes
