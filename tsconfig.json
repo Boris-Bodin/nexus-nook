@@ -35,9 +35,10 @@
             }
         ],
         "paths": {
-            "@/styles/*": ["styles/*"],
-            "@/components/*": ["components/*"],
-            "@/hooks/*": ["hooks/*"]
+            "@/app/*": ["app/*"],
+            "@/features/*": ["features/*"],
+            "@/shared/*": ["shared/*"],
+            "@/styles/*": ["styles/*"]
         }
     },
     "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx"],

@@ -2,7 +2,7 @@ import React from 'react';
 import {Metadata} from 'next';
 
 import '@/styles/styles.scss';
-import PageLayout from '@/components/page-layout';
+import QueryClientWrapper from '../shared/components/query-client-wrapper';
 
 export const metadata: Metadata = {
     title: 'Nexus Nook',
@@ -18,7 +18,7 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
                 <title>Nexus Nook</title>
             </head>
             <body suppressHydrationWarning={true}>
-                <PageLayout>{children}</PageLayout>
+                <QueryClientWrapper>{children}</QueryClientWrapper>
             </body>
         </html>
     );
