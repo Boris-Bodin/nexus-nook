@@ -1,5 +1,6 @@
 {
     "compilerOptions": {
+        "baseUrl": "src/",
         "module": "esnext",
         "moduleResolution": "node",
         "allowJs": true,
@@ -21,7 +22,7 @@
         "strictFunctionTypes": true,
         "strictNullChecks": true,
         "strictPropertyInitialization": true,
-        "lib": ["dom","dom.iterable","esnext"],
+        "lib": ["dom", "dom.iterable", "esnext"],
         "noEmit": true,
         "incremental": true,
         "esModuleInterop": true,
@@ -32,15 +33,12 @@
             {
                 "name": "next"
             }
-        ]
+        ],
+        "paths": {
+            "@/styles/*": ["styles/*"],
+            "@/components/*": ["components/*"]
+        }
     },
-    "include": [
-        "next-env.d.ts",
-        ".next/types/**/*.ts",
-        "**/*.ts",
-        "**/*.tsx"
-    ],
-    "exclude": [
-        "node_modules"
-    ]
+    "include": ["next-env.d.ts", ".next/types/**/*.ts", "**/*.ts", "**/*.tsx"],
+    "exclude": ["node_modules"]
 }
