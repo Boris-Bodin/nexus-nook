@@ -6,6 +6,10 @@
     "author": "Boris Bodin <boris.bodin@gmail.com>",
     "main": "index.js",
     "scripts": {
+        "bdd:deploy": "prisma migrate deploy",
+        "bdd:migration": "prisma migrate dev --create-only --name init",
+        "bdd:schema": "prisma generate",
+        "bdd:update": "yarn generate-schema && yarn generate-migration && yarn deploy-migration",
         "build": "next build",
         "build-storybook": "storybook build",
         "dev": "next dev",
@@ -13,12 +17,10 @@
         "postinstall": "prisma generate",
         "lint": "next lint",
         "lint-staged": "lint-staged",
-        "migration-bdd": "prisma migrate dev --name init",
         "prepare": "husky install",
         "start": "next start",
         "storybook": "storybook dev -p 6006",
-        "test": "vitest",
-        "update-schema": "prisma generate"
+        "test": "vitest"
     },
     "lint-staged": {
         "*.tsx": "eslint",
