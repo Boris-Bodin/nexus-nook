@@ -40,7 +40,8 @@
         "prisma": "^5.8.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
-        "styled-components": "^6.1.8"
+        "styled-components": "^6.1.8",
+        "zod": "^3.22.4"
     },
     "devDependencies": {
         "@storybook/addon-essentials": "^7.6.10",
@@ -59,7 +60,6 @@
         "@typescript-eslint/eslint-plugin": "^6.4.0",
         "@vitejs/plugin-react": "^4.2.1",
         "autoprefixer": "^10.4.16",
-        "axios": "^1.6.5",
         "eslint": "^8.0.1",
         "eslint-config-next": "14.0.4",
         "eslint-plugin-storybook": "^0.6.15",

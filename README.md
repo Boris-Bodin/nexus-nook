@@ -29,41 +29,42 @@ Nexus Hook is equipped with a wide range of features to enrich your Link-In-Bio 
 
 Ensure you have the following installed on your system:
 
-- [Node.js](https://nodejs.org/en/) (v18.18.0)
+-   [Node.js](https://nodejs.org/en/) (v18.18.0)
 
 ### Technology Stack
 
 Nexus Hook leverages a host of modern technologies for optimal performance and developer experience:
 
-- Next.js for server-side rendering
-- TypeScript for static typing
-- ESLint for code linting
-- Prettier for code formatting
-- Husky for Git hooks
-- Tailwind CSS for utility-first CSS
-- SASS for advanced CSS features
-- Vitest for testing
-- React Query for data fetching
-- StoryBook for component development
-- Prisma for database management
-- Deployment on Vercel for seamless production
+-   Next.js for server-side rendering
+-   TypeScript for static typing
+-   ESLint for code linting
+-   Prettier for code formatting
+-   Husky for Git hooks
+-   Tailwind CSS for utility-first CSS
+-   SASS for advanced CSS features
+-   Vitest for testing
+-   React Query for data fetching
+-   Zod for data validation
+-   StoryBook for component development
+-   Prisma for database management
+-   Deployment on Vercel for seamless production
 
 ### Future Developments
 
 We have exciting plans for Nexus Hook's future:
 
-- Implement a loader for query fetching.
-- User Registration and Authentication
-- Customizable Profile
-- Link Management
-- Analytics
-- Customizable Design
-- Social Media Integration
-- SEO Optimization
-- Mobile Responsiveness
-- Privacy Settings
-- Embeddable Content
-- And much more...
+-   Implement a loader for query fetching.
+-   User Registration and Authentication
+-   Customizable Profile
+-   Link Management
+-   Analytics
+-   Customizable Design
+-   Social Media Integration
+-   SEO Optimization
+-   Mobile Responsiveness
+-   Privacy Settings
+-   Embeddable Content
+-   And much more...
 
 ### Notes
 
