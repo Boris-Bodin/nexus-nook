@@ -53,10 +53,6 @@ Nexus Hook leverages a host of modern technologies for optimal performance and d
 We have exciting plans for Nexus Hook's future:
 
 - Implement a loader for query fetching.
-- Improve separation between API and front-end routes.
-- Explore possibilities for renaming the root layout.
-- Evaluate and implement best practices for naming conventions in React (e.g., `use-cases`, `hooks`, `domain`, `query` files).
-- Continue application development.
 - User Registration and Authentication
 - Customizable Profile
 - Link Management

@@ -3,35 +3,23 @@ import {Metadata} from 'next';
 
 import '@/styles/styles.scss';
 import QueryClientWrapper from '../shared/components/query-client-wrapper';
-import {AppBar, Button, Toolbar} from '@mui/material';
-import Link from 'next/link';
 
 export const metadata: Metadata = {
     title: 'Nexus Nook',
     description: 'Nexus Nook is a link-in-bio service',
 };
 
-export default function RootLayout({children}: {children: React.ReactNode}) {
+export default function RootLayout({children}: { children: React.ReactNode }) {
     return (
         <html lang='en'>
-            <head>
-                <meta charSet='utf-8' />
-                <meta name='viewport' content='width=device-width, initial-scale=1' />
-                <title>Nexus Nook</title>
-            </head>
-            <body suppressHydrationWarning={true}>
-                <AppBar position={'static'}>
-                    <Toolbar>
-                        <Link href={'/'}>
-                            <Button color='inherit'>Home</Button>
-                        </Link>
-                        <Link href={'/products'}>
-                            <Button color='inherit'>Product</Button>
-                        </Link>
-                    </Toolbar>
-                </AppBar>
-                <QueryClientWrapper>{children}</QueryClientWrapper>
-            </body>
+        <head>
+            <meta charSet='utf-8'/>
+            <meta name='viewport' content='width=device-width, initial-scale=1'/>
+            <title>Nexus Nook</title>
+        </head>
+        <body suppressHydrationWarning={true}>
+        <QueryClientWrapper>{children}</QueryClientWrapper>
+        </body>
         </html>
     );
 }
