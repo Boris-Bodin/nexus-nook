@@ -1,6 +1,6 @@
 # Nexus Hook: Streamline Your Online Presence
 
-Welcome to the Nexus Hook repository. Nexus Hook is a robust and efficient link-in-bio application designed to streamline your online presence.
+Welcome to the Nexus Hook repository. Nexus Hook is a robust and efficient link-in-bio application designed to streamline your online presence. This project is open source and intended for learning purposes.
 
 ## Explore Nexus Hook
 
@@ -24,6 +24,8 @@ Nexus Hook is equipped with a wide range of features to enrich your Link-In-Bio 
 10. **Embeddable Content**: Embed multimedia content in your Link-In-Bio page. (Under Development)
 
 ## Contributing to Nexus Hook
+
+We welcome contributions! Whether you're fixing bugs, improving documentation, or proposing new features, your efforts are appreciated.
 
 ### Prerequisites
 
