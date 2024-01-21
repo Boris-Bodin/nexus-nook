@@ -1,15 +1,12 @@
 import {z} from 'zod';
+import {ProfilItemSchema} from '@/features/profil/dtos/profil-item';
 
-export type Profil = {
-    id: number;
-    slug: string;
-    title: string;
-    subTitle: string;
-};
-
-export const profilSchema = z.object({
+export const ProfilSchema = z.object({
     id: z.number(),
     slug: z.string().min(1),
     title: z.string(),
     subTitle: z.string(),
+    items: z.array(ProfilItemSchema),
 });
+
+export type Profil = z.infer<typeof ProfilSchema>;
